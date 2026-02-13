@@ -8,6 +8,7 @@
   var hubspotFormTarget = document.querySelector('[data-hubspot-form]');
   var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var slideTimer = null;
+  var abRoot = document.querySelector('[data-ab-test="ads-hero"]');
 
   if (navBtn && nav) {
     navBtn.addEventListener('click', function () {
@@ -101,6 +102,36 @@
 
       var fallback = document.querySelector('[data-fallback-form]');
       if (fallback) fallback.style.display = 'none';
+    }
+  }
+
+  if (abRoot) {
+    var urlVariant = null;
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = params.get('ab');
+    if (fromUrl === 'a' || fromUrl === 'b') urlVariant = fromUrl;
+
+    var stored = null;
+    try {
+      stored = window.localStorage.getItem('ab_ads_hero');
+    } catch (e) {}
+
+    var variant = urlVariant || (stored === 'a' || stored === 'b' ? stored : null);
+    if (!variant) variant = Math.random() < 0.5 ? 'a' : 'b';
+
+    try {
+      window.localStorage.setItem('ab_ads_hero', variant);
+    } catch (e) {}
+
+    abRoot.setAttribute('data-ab-variant', variant);
+
+    document.querySelectorAll('[data-ab-a][data-ab-b]').forEach(function (el) {
+      var nextText = el.getAttribute(variant === 'a' ? 'data-ab-a' : 'data-ab-b');
+      if (nextText) el.textContent = nextText;
+    });
+
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: 'ab_variant_assigned', experiment: 'ads_hero_copy', variant: variant });
     }
   }
 })();
