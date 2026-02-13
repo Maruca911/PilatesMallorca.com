@@ -7,16 +7,16 @@
   <meta name="description" content="Submit your preferences and receive 3 personalized Pilates matches in Mallorca by email or WhatsApp within 24 hours.">
   <meta name="keywords" content="pilates mallorca match form,pilates retreat match mallorca,pilates teacher mallorca,pilates studios mallorca">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/signup/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/signup/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/signup/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/signup/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/signup/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/signup/">
+  <link rel="canonical" href="https://pilatesmallorca.com/signup/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/signup/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/signup/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/signup/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/signup/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/signup/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Get Matched: Retreats, Teachers, Studios | Mallorca Pilates">
   <meta property="og:description" content="One form, three curated options in 24 hours.">
-  <meta property="og:url" content="https://mallorcapilates.com/signup/">
+  <meta property="og:url" content="https://pilatesmallorca.com/signup/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Get Matched: Retreats, Teachers, Studios">
@@ -67,15 +67,24 @@
 
     <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
 
-    <form class="form" data-fallback-form>
+    <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+      <input type="hidden" name="form-name" value="pilates-match">
+      <p class="visually-hidden">
+        <label>Don’t fill this out <input name="bot-field"></label>
+      </p>
+      <input type="hidden" name="source_page" value="">
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value="">
+
       <div class="form-row">
-        <label>Full name <input type="text" required></label>
-        <label>Email <input type="email" required></label>
+        <label>Full name <input type="text" name="name" autocomplete="name" required></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
       </div>
       <div class="form-row">
-        <label>WhatsApp number <input type="tel" placeholder="+34 ..."></label>
+        <label>WhatsApp number <input type="tel" name="phone" autocomplete="tel" placeholder="+34 ..."></label>
         <label>Preferred contact channel
-          <select required>
+          <select name="contact_channel_preference" required>
             <option value="">Select channel</option>
             <option>Email</option>
             <option>WhatsApp</option>
@@ -85,7 +94,7 @@
       </div>
       <div class="form-row">
         <label>Looking for
-          <select required>
+          <select name="lead_category" required>
             <option value="">Select option</option>
             <option>Retreat</option>
             <option>Teacher</option>
@@ -94,30 +103,30 @@
           </select>
         </label>
         <label>Area in Mallorca
-          <select required>
+          <select name="area" required>
             <option value="">Select area</option>
             <option>Palma</option>
             <option>Calvia</option>
             <option>Andratx</option>
             <option>Soller</option>
             <option>Alcudia</option>
-            <option>Flexible</option>
+            <option>Flexible / island-wide</option>
           </select>
         </label>
       </div>
       <div class="form-row">
         <label>Goal
-          <select required>
+          <select name="goal" required>
             <option value="">Select goal</option>
             <option>Beginner onboarding</option>
             <option>Strength and toning</option>
             <option>Mobility and flexibility</option>
-            <option>Back-care support</option>
+            <option>Recovery / back-care support</option>
             <option>Wellness retreat</option>
           </select>
         </label>
         <label>Language
-          <select required>
+          <select name="language_preference" required>
             <option value="">Select language</option>
             <option>English</option>
             <option>Spanish</option>
@@ -126,8 +135,11 @@
           </select>
         </label>
       </div>
+      <label>Notes (optional)
+        <textarea name="notes" placeholder="Add injuries, timing, schedule, and anything else that matters."></textarea>
+      </label>
       <button class="button primary" type="submit">Send My Match Request</button>
-      <p class="meta">By submitting this form, you agree to receive tailored options from Mallorca Pilates by your selected channel.</p>
+      <p class="meta">By submitting, you agree to receive tailored options from Mallorca Pilates by your selected channel.</p>
     </form>
 
     <div class="card">
@@ -158,6 +170,6 @@
   </div>
 </footer>
 
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Submit Form</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="#match-form">Submit Form</a></div>
 </body>
 </html>

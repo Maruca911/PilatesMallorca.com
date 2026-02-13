@@ -1,4 +1,4 @@
-# SEO Checklist - mallorcapilates.com
+# SEO Checklist - pilatesmallorca.com
 
 ## Technical
 - [x] Mobile-first layout and responsive breakpoints

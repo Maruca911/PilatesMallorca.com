@@ -7,16 +7,16 @@
   <meta name="description" content="Browse Reformer Pilates studios in Mallorca by area, language, level, and schedule.">
   <meta name="keywords" content="reformer pilates mallorca,pilates classes mallorca,pilates studio mallorca">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/studios/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/studios/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/studios/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/studios/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/studios/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/studios/">
+  <link rel="canonical" href="https://pilatesmallorca.com/studios/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/studios/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/studios/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/studios/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/studios/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/studios/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pilates Mallorca Studio Directory | Mallorca Pilates">
   <meta property="og:description" content="Browse Reformer Pilates studios in Mallorca by area, language, level, and schedule.">
-  <meta property="og:url" content="https://mallorcapilates.com/studios/">
+  <meta property="og:url" content="https://pilatesmallorca.com/studios/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pilates Mallorca Studio Directory | Mallorca Pilates">
@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
+  <script defer src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -54,10 +55,113 @@
   </div>
 </header>
 <main class="container">
-<section class="hero article">
-  <p class="breadcrumb"><a href="/">Home</a></p>
-  <h1>Reformer Pilates studios in Mallorca</h1>
-  <p>Use this directory to discover studios and compare formats before booking.</p>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-intro">
+      <p class="breadcrumb"><a href="/">Home</a></p>
+      <span class="hero-pill"><span class="pulse-dot"></span>Studio matching in Mallorca</span>
+      <h1>Reformer Pilates studios in Mallorca</h1>
+      <p>Browse by area and intent, or submit one short form to receive 3 best-fit studio options by email or WhatsApp within 24 hours.</p>
+      <div class="cta-row">
+        <a class="button secondary" href="#filters">Filter studios</a>
+        <a class="button secondary" href="#map">Map</a>
+      </div>
+      <div class="hero-media" data-hero-slideshow aria-label="Studio highlights slideshow">
+        <div class="hero-slide a"><span>Beginner-friendly studios with structured onboarding</span></div>
+        <div class="hero-slide b"><span>Private and duo sessions for faster feedback</span></div>
+        <div class="hero-slide c"><span>Reformer, mat, and physio-aware options by area</span></div>
+      </div>
+      <p class="meta">Prefer a teacher? Explore <a href="/teachers/">teacher matches</a> or <a href="/retreats/">retreats</a>.</p>
+    </div>
+
+    <aside class="hero-form" aria-labelledby="studio-form-title">
+      <h2 id="studio-form-title">Get 3 studio matches</h2>
+      <p class="meta">Short questionnaire. Free for users. You choose who to book with.</p>
+
+      <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
+
+      <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+        <input type="hidden" name="form-name" value="pilates-match">
+        <p class="visually-hidden">
+          <label>Don’t fill this out <input name="bot-field"></label>
+        </p>
+        <input type="hidden" name="source_page" value="">
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="lead_category" value="Studio">
+
+        <div class="form-row">
+          <label>Name <input type="text" name="name" autocomplete="name" required></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        </div>
+
+        <div class="form-row">
+          <label>Contact channel
+            <select name="contact_channel_preference" required>
+              <option value="">Select channel</option>
+              <option>Email</option>
+              <option>WhatsApp</option>
+              <option>Email + WhatsApp</option>
+            </select>
+          </label>
+          <label>WhatsApp number (if selected) <input type="tel" name="phone" autocomplete="tel" placeholder="+34 ..."></label>
+        </div>
+
+        <div class="form-row">
+          <label>Area in Mallorca
+            <select name="area" required>
+              <option value="">Select area</option>
+              <option>Palma</option>
+              <option>Calvia</option>
+              <option>Alcudia</option>
+              <option>Soller</option>
+              <option>Andratx</option>
+              <option>Flexible / island-wide</option>
+            </select>
+          </label>
+          <label>Level
+            <select name="level" required>
+              <option value="">Select level</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+              <option>Not sure</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Main goal
+            <select name="goal" required>
+              <option value="">Select goal</option>
+              <option>Beginner onboarding</option>
+              <option>Strength and toning</option>
+              <option>Mobility and flexibility</option>
+              <option>Recovery / back-care support</option>
+              <option>Prenatal / postnatal</option>
+            </select>
+          </label>
+          <label>Preferred language
+            <select name="language_preference" required>
+              <option value="">Select language</option>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Swedish</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Notes (optional)
+          <textarea name="notes" placeholder="Example: private sessions, class times, injuries, reformer-only preference."></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Send My Studio Request</button>
+        <p class="meta">We’ll reply with 3 options and can refine the shortlist if needed.</p>
+      </form>
+    </aside>
+  </div>
 </section>
 <section class="section article">
   <div class="notice"><strong>How rankings are built:</strong> profile completeness, schedule availability, verified reformer equipment, and learner reviews.</div>
@@ -65,7 +169,7 @@
     <h3>Jump to intent pages</h3>
     <p><a href="/studios/reformer-pilates-for-beginners/">Beginner Reformer</a> · <a href="/studios/private-reformer-mallorca/">Private Reformer</a> · <a href="/studios/prenatal-reformer-mallorca/">Prenatal</a> · <a href="/studios/physio-reformer-mallorca/">Physio-aware</a></p>
   </div>
-  <div class="card">
+  <div class="card" id="filters">
     <h3>Find your fit fast</h3>
     <div class="grid cols-2">
       <label>Area
@@ -105,7 +209,7 @@
     <h3>More local area pages (near-me intent)</h3>
     <p><a href="/studios/inca/">Inca</a> · <a href="/studios/manacor/">Manacor</a> · <a href="/studios/llucmajor/">Llucmajor</a> · <a href="/studios/pollensa/">Pollensa</a> · <a href="/studios/santanyi/">Santanyi</a> · <a href="/studios/porto-cristo/">Porto Cristo</a> · <a href="/studios/marratxi/">Marratxi</a> · <a href="/studios/felanitx/">Felanitx</a></p>
   </div>
-  <div class="card">
+  <div class="card" id="map">
     <h3>Map search</h3>
     <iframe title="Pilates studios Mallorca map" loading="lazy" src="https://www.google.com/maps?q=Reformer+Pilates+Studios+Mallorca&output=embed" style="border:0;width:100%;min-height:300px;border-radius:12px;"></iframe>
   </div>
@@ -129,6 +233,6 @@
     <div><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a><br><a href="/contact/">Contact</a></div>
   </div>
 </footer>
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get Matched</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="#match-form">Get Matched</a></div>
 </body>
 </html>

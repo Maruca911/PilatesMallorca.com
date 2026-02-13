@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /Users/marianacarvalho/Documents/mallorcapilates.com
+cd /Users/marianacarvalho/Documents/pilatesmallorca.com
 
 header() {
   local title="$1"; local desc="$2"; local canon="$3"; local keywords="$4"
@@ -15,11 +15,11 @@ header() {
   <meta name="keywords" content="${keywords}">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="${canon}">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/en/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/en/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/en/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/en/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
@@ -92,7 +92,7 @@ HTML
   } > "$path"
 }
 
-write_page "studios/index.html" "Reformer Pilates Mallorca Studio Directory | Mallorca Reformer" "Browse Reformer Pilates studios in Mallorca by area, language, level, and schedule." "https://mallorcapilates.com/studios/" "reformer pilates mallorca,pilates classes mallorca,pilates studio mallorca" "Reformer Pilates studios in Mallorca" "Use this directory to discover studios and compare formats before booking." "
+write_page "studios/index.html" "Reformer Pilates Mallorca Studio Directory | Mallorca Reformer" "Browse Reformer Pilates studios in Mallorca by area, language, level, and schedule." "https://pilatesmallorca.com/studios/" "reformer pilates mallorca,pilates classes mallorca,pilates studio mallorca" "Reformer Pilates studios in Mallorca" "Use this directory to discover studios and compare formats before booking." "
 <div class='notice'><strong>How rankings are built:</strong> profile completeness, schedule availability, verified reformer equipment, and learner reviews.</div>
 <div class='card'>
   <h3>Find your fit fast</h3>
@@ -127,7 +127,7 @@ write_page "studios/index.html" "Reformer Pilates Mallorca Studio Directory | Ma
 </div>
 "
 
-write_page "studios/palma/index.html" "Pilates Palma de Mallorca: Reformer Studios | Mallorca Reformer" "Compare Reformer Pilates studios in Palma de Mallorca with class type, price range, and languages." "https://mallorcapilates.com/studios/palma/" "pilates palma de mallorca,reformer pilates palma,pilates palma" "Best Reformer Pilates studios in Palma" "Palma is the strongest location for Reformer Pilates in Mallorca with options across all levels." "
+write_page "studios/palma/index.html" "Pilates Palma de Mallorca: Reformer Studios | Mallorca Reformer" "Compare Reformer Pilates studios in Palma de Mallorca with class type, price range, and languages." "https://pilatesmallorca.com/studios/palma/" "pilates palma de mallorca,reformer pilates palma,pilates palma" "Best Reformer Pilates studios in Palma" "Palma is the strongest location for Reformer Pilates in Mallorca with options across all levels." "
 <div class='grid cols-2'>
   <article class='card'><h3>Centro Reformer Palma</h3><p class='meta'>From EUR 22/class · ES/EN · Beginner to advanced</p><div class='badges'><span class='badge'>6 Reformers</span><span class='badge'>Small Groups</span></div></article>
   <article class='card'><h3>Passeig Pilates Lab</h3><p class='meta'>From EUR 28/class · ES/EN/DE · Core + posture focus</p><div class='badges'><span class='badge'>Private Sessions</span><span class='badge'>Physio Support</span></div></article>
@@ -137,7 +137,7 @@ write_page "studios/palma/index.html" "Pilates Palma de Mallorca: Reformer Studi
 <p><a class='button primary' href='/signup/'>Get a personalized Palma shortlist</a></p>
 "
 
-write_page "studios/calvia/index.html" "Reformer Pilates Calvia Studios | Mallorca Reformer" "Discover Reformer Pilates studios in Calvia with verified equipment and multilingual teachers." "https://mallorcapilates.com/studios/calvia/" "reformer pilates mallorca,pilates calvia,pilates classes mallorca" "Reformer Pilates in Calvia" "Calvia combines boutique training with premium hotel-area convenience." "
+write_page "studios/calvia/index.html" "Reformer Pilates Calvia Studios | Mallorca Reformer" "Discover Reformer Pilates studios in Calvia with verified equipment and multilingual teachers." "https://pilatesmallorca.com/studios/calvia/" "reformer pilates mallorca,pilates calvia,pilates classes mallorca" "Reformer Pilates in Calvia" "Calvia combines boutique training with premium hotel-area convenience." "
 <div class='grid cols-2'>
   <article class='card'><h3>Calvia Core Studio</h3><p class='meta'>From EUR 27/class · ES/EN · Strength + alignment</p></article>
   <article class='card'><h3>Magaluf Reformer Collective</h3><p class='meta'>From EUR 19/class · EN/DE · Group reformer foundations</p></article>
@@ -146,28 +146,28 @@ write_page "studios/calvia/index.html" "Reformer Pilates Calvia Studios | Mallor
 </div>
 "
 
-write_page "studios/alcudia/index.html" "Reformer Pilates Alcudia Studios | Mallorca Reformer" "Find Reformer Pilates classes in Alcudia for beginners and experienced practitioners." "https://mallorcapilates.com/studios/alcudia/" "pilates classes mallorca,reformer pilates mallorca,pilates alcudia" "Reformer Pilates in Alcudia" "Alcudia offers flexible options for residents and visitors who want structured movement sessions." "
+write_page "studios/alcudia/index.html" "Reformer Pilates Alcudia Studios | Mallorca Reformer" "Find Reformer Pilates classes in Alcudia for beginners and experienced practitioners." "https://pilatesmallorca.com/studios/alcudia/" "pilates classes mallorca,reformer pilates mallorca,pilates alcudia" "Reformer Pilates in Alcudia" "Alcudia offers flexible options for residents and visitors who want structured movement sessions." "
 <div class='grid cols-2'>
   <article class='card'><h3>Port d'Alcudia Reformer Club</h3><p class='meta'>From EUR 21/class · ES/EN · Intro tracks and progression plans</p></article>
   <article class='card'><h3>Nord Pilates Studio</h3><p class='meta'>From EUR 24/class · ES/DE · Focus on spinal mobility</p></article>
 </div>
 "
 
-write_page "studios/soller/index.html" "Reformer Pilates Soller Studios | Mallorca Reformer" "Browse Soller Reformer Pilates studios with schedule and level filters." "https://mallorcapilates.com/studios/soller/" "reformer pilates mallorca,pilates soller,pilates classes mallorca" "Reformer Pilates in Soller" "Soller studios are ideal for technique quality, control, and low-impact strength progressions." "
+write_page "studios/soller/index.html" "Reformer Pilates Soller Studios | Mallorca Reformer" "Browse Soller Reformer Pilates studios with schedule and level filters." "https://pilatesmallorca.com/studios/soller/" "reformer pilates mallorca,pilates soller,pilates classes mallorca" "Reformer Pilates in Soller" "Soller studios are ideal for technique quality, control, and low-impact strength progressions." "
 <div class='grid cols-2'>
   <article class='card'><h3>Soller Precision Pilates</h3><p class='meta'>From EUR 29/class · EN/DE · Control and tempo training</p></article>
   <article class='card'><h3>Tramuntana Reformer Space</h3><p class='meta'>From EUR 26/class · ES/EN · Reformer and tower combos</p></article>
 </div>
 "
 
-write_page "studios/andratx/index.html" "Reformer Pilates Andratx Studios | Mallorca Reformer" "Compare Reformer Pilates in Andratx with private and premium small group options." "https://mallorcapilates.com/studios/andratx/" "reformer pilates mallorca,pilates andratx,pilates classes mallorca" "Reformer Pilates in Andratx" "Andratx focuses on premium teaching ratios and personalized movement coaching." "
+write_page "studios/andratx/index.html" "Reformer Pilates Andratx Studios | Mallorca Reformer" "Compare Reformer Pilates in Andratx with private and premium small group options." "https://pilatesmallorca.com/studios/andratx/" "reformer pilates mallorca,pilates andratx,pilates classes mallorca" "Reformer Pilates in Andratx" "Andratx focuses on premium teaching ratios and personalized movement coaching." "
 <div class='grid cols-2'>
   <article class='card'><h3>Andratx Reformer Atelier</h3><p class='meta'>From EUR 34/class · EN/DE · 1:1 and duo coaching</p></article>
   <article class='card'><h3>Puerto Andratx Movement Studio</h3><p class='meta'>From EUR 31/class · ES/EN · Strength + flexibility programming</p></article>
 </div>
 "
 
-write_page "studios/map/index.html" "Mallorca Reformer Studio Map | Mallorca Reformer" "Plan Reformer Pilates classes in Mallorca by location and commute time." "https://mallorcapilates.com/studios/map/" "pilates mallorca,reformer pilates mallorca,pilates studios map mallorca" "Map view: Reformer Pilates Mallorca" "Use area-based planning before selecting your studio shortlist." "
+write_page "studios/map/index.html" "Mallorca Reformer Studio Map | Mallorca Reformer" "Plan Reformer Pilates classes in Mallorca by location and commute time." "https://pilatesmallorca.com/studios/map/" "pilates mallorca,reformer pilates mallorca,pilates studios map mallorca" "Map view: Reformer Pilates Mallorca" "Use area-based planning before selecting your studio shortlist." "
 <div class='card'>
   <p class='meta'>Interactive map placeholder for production integration (Mapbox/Google Maps).</p>
   <ul class='list'>
@@ -178,7 +178,7 @@ write_page "studios/map/index.html" "Mallorca Reformer Studio Map | Mallorca Ref
 </div>
 "
 
-write_page "teachers/index.html" "Pilates Teachers in Mallorca | Mallorca Reformer" "Find certified Pilates teachers in Mallorca by specialty, language, and lesson style." "https://mallorcapilates.com/teachers/" "pilates mallorca,pilates teachers mallorca,reformer coach mallorca" "Pilates teachers in Mallorca" "Get matched with teachers for strength, recovery, mobility, or beginner onboarding." "
+write_page "teachers/index.html" "Pilates Teachers in Mallorca | Mallorca Reformer" "Find certified Pilates teachers in Mallorca by specialty, language, and lesson style." "https://pilatesmallorca.com/teachers/" "pilates mallorca,pilates teachers mallorca,reformer coach mallorca" "Pilates teachers in Mallorca" "Get matched with teachers for strength, recovery, mobility, or beginner onboarding." "
 <div class='grid cols-2'>
   <article class='card'><h3>Ana M.</h3><p class='meta'>ES/EN · Posture and low back care</p></article>
   <article class='card'><h3>Leonie R.</h3><p class='meta'>EN/DE · Athletic performance and core power</p></article>
@@ -188,7 +188,7 @@ write_page "teachers/index.html" "Pilates Teachers in Mallorca | Mallorca Reform
 <p><a class='button primary' href='/signup/'>Match me with a teacher</a></p>
 "
 
-write_page "teachers/reformer/index.html" "Reformer Pilates Teachers Mallorca | Mallorca Reformer" "Specialist Reformer Pilates teachers in Mallorca for private and group classes." "https://mallorcapilates.com/teachers/reformer/" "reformer pilates mallorca,reformer teacher mallorca,pilates instructors mallorca" "Specialist Reformer teachers" "These teachers focus on equipment-based Pilates programming and safe progression." "
+write_page "teachers/reformer/index.html" "Reformer Pilates Teachers Mallorca | Mallorca Reformer" "Specialist Reformer Pilates teachers in Mallorca for private and group classes." "https://pilatesmallorca.com/teachers/reformer/" "reformer pilates mallorca,reformer teacher mallorca,pilates instructors mallorca" "Specialist Reformer teachers" "These teachers focus on equipment-based Pilates programming and safe progression." "
 <ul class='list'>
   <li>Rehab-aware sequences</li>
   <li>Sport-specific strength programs</li>
@@ -196,7 +196,7 @@ write_page "teachers/reformer/index.html" "Reformer Pilates Teachers Mallorca | 
 </ul>
 "
 
-write_page "beginners/reformer-pilates-mallorca/index.html" "Reformer Pilates for Beginners in Mallorca | Mallorca Reformer" "Beginner guide to start Reformer Pilates in Mallorca safely and consistently." "https://mallorcapilates.com/beginners/reformer-pilates-mallorca/" "reformer pilates mallorca,reformer pilates beginner,pilates classes mallorca" "Beginner guide: Reformer Pilates Mallorca" "If you are new to Pilates, start with stability, breath, and controlled range before higher resistance." "
+write_page "beginners/reformer-pilates-mallorca/index.html" "Reformer Pilates for Beginners in Mallorca | Mallorca Reformer" "Beginner guide to start Reformer Pilates in Mallorca safely and consistently." "https://pilatesmallorca.com/beginners/reformer-pilates-mallorca/" "reformer pilates mallorca,reformer pilates beginner,pilates classes mallorca" "Beginner guide: Reformer Pilates Mallorca" "If you are new to Pilates, start with stability, breath, and controlled range before higher resistance." "
 <ol class='list'>
   <li>Take 2-3 intro sessions focused on breathing and alignment.</li>
   <li>Prioritize cue quality over class intensity.</li>
@@ -205,7 +205,7 @@ write_page "beginners/reformer-pilates-mallorca/index.html" "Reformer Pilates fo
 <p>Next step: <a href='/signup/'>request a beginner-safe studio match</a>.</p>
 "
 
-write_page "compare/reformer-vs-yoga-mat/index.html" "Reformer Pilates vs Yoga Mat: Evidence-Based Comparison" "Compare Reformer Pilates and yoga mat practice with practical outcomes and trusted sources." "https://mallorcapilates.com/compare/reformer-vs-yoga-mat/" "reformer vs yoga mat,reformer pilates benefits,pilates mallorca" "Reformer Pilates vs classical yoga on the mat" "Both methods can improve physical function; choose based on goals, coaching access, and loading preferences." "
+write_page "compare/reformer-vs-yoga-mat/index.html" "Reformer Pilates vs Yoga Mat: Evidence-Based Comparison" "Compare Reformer Pilates and yoga mat practice with practical outcomes and trusted sources." "https://pilatesmallorca.com/compare/reformer-vs-yoga-mat/" "reformer vs yoga mat,reformer pilates benefits,pilates mallorca" "Reformer Pilates vs classical yoga on the mat" "Both methods can improve physical function; choose based on goals, coaching access, and loading preferences." "
 <div class='grid cols-2'>
   <article class='card'><h3>Reformer Pilates</h3><ul class='list'><li>Adjustable resistance for progressive overload</li><li>Equipment feedback improves body awareness</li><li>Useful for controlled strength and posture work</li></ul></article>
   <article class='card'><h3>Classical Yoga on mat</h3><ul class='list'><li>Accessible and low equipment barrier</li><li>Emphasis on flexibility and breath integration</li><li>Strong option for stress regulation and mobility</li></ul></article>
@@ -213,19 +213,19 @@ write_page "compare/reformer-vs-yoga-mat/index.html" "Reformer Pilates vs Yoga M
 <div class='notice'>Sources: <a href='https://www.who.int/news-room/fact-sheets/detail/physical-activity' target='_blank' rel='noopener'>WHO physical activity guidance</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/24346291/' target='_blank' rel='noopener'>Pilates and low back pain meta-analysis</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/32870936/' target='_blank' rel='noopener'>Yoga and low back pain evidence</a>.</div>
 "
 
-write_page "pricing/index.html" "Mallorca Reformer Pricing & Plans" "See lead plans and partner options for connecting with Reformer Pilates studios in Mallorca." "https://mallorcapilates.com/pricing/" "pilates classes mallorca,reformer pilates mallorca,pilates pricing mallorca" "Pricing and partner plans" "For users, the matching service is free. Studios can request partner visibility plans." "
+write_page "pricing/index.html" "Mallorca Reformer Pricing & Plans" "See lead plans and partner options for connecting with Reformer Pilates studios in Mallorca." "https://pilatesmallorca.com/pricing/" "pilates classes mallorca,reformer pilates mallorca,pilates pricing mallorca" "Pricing and partner plans" "For users, the matching service is free. Studios can request partner visibility plans." "
 <div class='grid cols-2'>
   <article class='card'><h3>User Matching</h3><p class='meta'>EUR 0 · Personalized studio and teacher shortlist</p></article>
   <article class='card'><h3>Studio Partner</h3><p class='meta'>From EUR 79/month · Featured listings and lead routing</p></article>
 </div>
 "
 
-write_page "about/index.html" "About Mallorca Reformer" "Learn how Mallorca Reformer helps people find the best Reformer Pilates studio and teacher." "https://mallorcapilates.com/about/" "pilates mallorca,reformer pilates mallorca,about mallorca reformer" "About Mallorca Reformer" "We are a local-first directory and educational resource focused on evidence-led movement guidance." "
+write_page "about/index.html" "About Mallorca Reformer" "Learn how Mallorca Reformer helps people find the best Reformer Pilates studio and teacher." "https://pilatesmallorca.com/about/" "pilates mallorca,reformer pilates mallorca,about mallorca reformer" "About Mallorca Reformer" "We are a local-first directory and educational resource focused on evidence-led movement guidance." "
 <p>Mission: connect users with high-fit Reformer Pilates studios in Mallorca and publish tutorials that reduce beginner friction.</p>
 <p>Editorial standards: cite authoritative sources for all health-related claims.</p>
 "
 
-write_page "contact/index.html" "Contact Mallorca Reformer" "Contact the Mallorca Reformer team for support, partnerships, and listing updates." "https://mallorcapilates.com/contact/" "pilates mallorca contact,reformer pilates mallorca" "Contact us" "Use this form for support and studio listing requests." "
+write_page "contact/index.html" "Contact Mallorca Reformer" "Contact the Mallorca Reformer team for support, partnerships, and listing updates." "https://pilatesmallorca.com/contact/" "pilates mallorca contact,reformer pilates mallorca" "Contact us" "Use this form for support and studio listing requests." "
 <form class='form'>
   <label>Name <input type='text' name='name' required></label>
   <label>Email <input type='email' name='email' required></label>
@@ -234,7 +234,7 @@ write_page "contact/index.html" "Contact Mallorca Reformer" "Contact the Mallorc
 </form>
 "
 
-write_page "signup/index.html" "Sign Up: Get Matched with a Reformer Pilates Studio" "Sign up and get matched with Reformer Pilates studios and teachers in Mallorca." "https://mallorcapilates.com/signup/" "reformer pilates mallorca,pilates classes mallorca,pilates palma" "Sign up for studio and teacher matching" "Complete this short intake to receive options tailored to your goals, budget, and location." "
+write_page "signup/index.html" "Sign Up: Get Matched with a Reformer Pilates Studio" "Sign up and get matched with Reformer Pilates studios and teachers in Mallorca." "https://pilatesmallorca.com/signup/" "reformer pilates mallorca,pilates classes mallorca,pilates palma" "Sign up for studio and teacher matching" "Complete this short intake to receive options tailored to your goals, budget, and location." "
 <form class='form'>
   <label>Full Name <input type='text' required></label>
   <label>Email <input type='email' required></label>
@@ -257,7 +257,7 @@ write_page "signup/index.html" "Sign Up: Get Matched with a Reformer Pilates Stu
 </form>
 "
 
-write_page "blog/index.html" "Pilates & Reformer Blog Mallorca | Tutorials and Guides" "Read SEO-optimized Pilates tutorials, beginner guides, and evidence-based comparisons." "https://mallorcapilates.com/blog/" "pilates blog mallorca,reformer pilates benefits,reformer vs yoga" "Pilates tutorials and Reformer guides" "Explore practical lessons, plans, and comparisons designed for Mallorca learners." "
+write_page "blog/index.html" "Pilates & Reformer Blog Mallorca | Tutorials and Guides" "Read SEO-optimized Pilates tutorials, beginner guides, and evidence-based comparisons." "https://pilatesmallorca.com/blog/" "pilates blog mallorca,reformer pilates benefits,reformer vs yoga" "Pilates tutorials and Reformer guides" "Explore practical lessons, plans, and comparisons designed for Mallorca learners." "
 <div class='grid cols-2'>
   <article class='card'><h3><a href='/blog/reformer-pilates-beginners-mallorca/'>Reformer Pilates for beginners in Mallorca</a></h3></article>
   <article class='card'><h3><a href='/blog/reformer-vs-yoga-mat-goals/'>Reformer vs yoga mat: which fits your goals?</a></h3></article>
@@ -273,7 +273,7 @@ write_page "blog/index.html" "Pilates & Reformer Blog Mallorca | Tutorials and G
 <p><a class='button secondary' href='/signup/'>Need a personal recommendation? Sign up</a></p>
 "
 
-write_page "brand/index.html" "Brand Guidelines | Mallorca Reformer" "Visual and UX standards for Mallorca Reformer: color palette, typography, and mobile behavior." "https://mallorcapilates.com/brand/" "brand guidelines,pilates mallorca website,clean ui purple" "Brand guidelines" "A clean white-and-purple identity with conversion-focused UI on mobile and desktop." "
+write_page "brand/index.html" "Brand Guidelines | Mallorca Reformer" "Visual and UX standards for Mallorca Reformer: color palette, typography, and mobile behavior." "https://pilatesmallorca.com/brand/" "brand guidelines,pilates mallorca website,clean ui purple" "Brand guidelines" "A clean white-and-purple identity with conversion-focused UI on mobile and desktop." "
 <ul class='list'>
   <li>Colors: #6E44FF, #9B7BFF, #FFFFFF, #F7F7FB, #1A1A1A</li>
   <li>Typography: Manrope for headings, Source Sans 3 for body</li>
@@ -282,18 +282,18 @@ write_page "brand/index.html" "Brand Guidelines | Mallorca Reformer" "Visual and
 </ul>
 "
 
-write_page "faq/index.html" "FAQ | Reformer Pilates Mallorca" "Answers to common questions about classes, pricing, and getting matched in Mallorca." "https://mallorcapilates.com/faq/" "reformer pilates mallorca faq,pilates classes mallorca" "Frequently asked questions" "Quick answers before you choose your studio and teacher." "
+write_page "faq/index.html" "FAQ | Reformer Pilates Mallorca" "Answers to common questions about classes, pricing, and getting matched in Mallorca." "https://pilatesmallorca.com/faq/" "reformer pilates mallorca faq,pilates classes mallorca" "Frequently asked questions" "Quick answers before you choose your studio and teacher." "
 <h2>Do I need experience?</h2><p>No. Beginner-friendly classes are available across Mallorca.</p>
 <h2>Can I request German-speaking instructors?</h2><p>Yes, language is part of the signup filter.</p>
 <h2>Is matching free?</h2><p>Yes, the user matching service is free.</p>
 "
 
-write_page "privacy/index.html" "Privacy Policy | Mallorca Reformer" "How Mallorca Reformer handles personal data and lead-routing information." "https://mallorcapilates.com/privacy/" "privacy policy mallorca reformer" "Privacy policy" "We collect only the data required to deliver studio and teacher matches and support." "
+write_page "privacy/index.html" "Privacy Policy | Mallorca Reformer" "How Mallorca Reformer handles personal data and lead-routing information." "https://pilatesmallorca.com/privacy/" "privacy policy mallorca reformer" "Privacy policy" "We collect only the data required to deliver studio and teacher matches and support." "
 <p>Data collected: contact details, location preferences, goals, and language preferences.</p>
 <p>Purpose: lead matching and support communication.</p>
 "
 
-write_page "terms/index.html" "Terms of Use | Mallorca Reformer" "Terms governing the use of Mallorca Reformer directory and blog." "https://mallorcapilates.com/terms/" "terms mallorca reformer" "Terms of use" "Using this website means you agree to our informational and listing terms." "
+write_page "terms/index.html" "Terms of Use | Mallorca Reformer" "Terms governing the use of Mallorca Reformer directory and blog." "https://pilatesmallorca.com/terms/" "terms mallorca reformer" "Terms of use" "Using this website means you agree to our informational and listing terms." "
 <p>Content is educational and not medical diagnosis. Consult qualified professionals for medical conditions.</p>
 <p>Studio details are updated regularly but may change.</p>
 "
@@ -327,7 +327,7 @@ for item in "${BLOGS[@]}"; do
   IFS='|' read -r slug title keyword <<<"$item"
   mkdir -p "blog/${slug}"
   {
-    header "${title} | Mallorca Reformer Blog" "${title}. Practical guidance for Pilates users in Mallorca with evidence-backed notes and source links." "https://mallorcapilates.com/blog/${slug}/" "${keyword},reformer pilates mallorca,pilates classes mallorca"
+    header "${title} | Mallorca Reformer Blog" "${title}. Practical guidance for Pilates users in Mallorca with evidence-backed notes and source links." "https://pilatesmallorca.com/blog/${slug}/" "${keyword},reformer pilates mallorca,pilates classes mallorca"
     cat <<HTML
 <article class="hero article">
   <p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></p>
@@ -359,7 +359,7 @@ for item in "${BLOGS[@]}"; do
   "headline":"${title}",
   "author":{"@type":"Organization","name":"Mallorca Reformer"},
   "publisher":{"@type":"Organization","name":"Mallorca Reformer"},
-  "mainEntityOfPage":"https://mallorcapilates.com/blog/${slug}/"
+  "mainEntityOfPage":"https://pilatesmallorca.com/blog/${slug}/"
 }
 </script>
 HTML
@@ -370,42 +370,42 @@ done
 cat > robots.txt <<'TXT'
 User-agent: *
 Allow: /
-Sitemap: https://mallorcapilates.com/sitemap.xml
+Sitemap: https://pilatesmallorca.com/sitemap.xml
 TXT
 
 cat > sitemap.xml <<'XML'
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mallorcapilates.com/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/palma/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/calvia/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/alcudia/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/soller/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/andratx/</loc></url>
-  <url><loc>https://mallorcapilates.com/studios/map/</loc></url>
-  <url><loc>https://mallorcapilates.com/teachers/</loc></url>
-  <url><loc>https://mallorcapilates.com/teachers/reformer/</loc></url>
-  <url><loc>https://mallorcapilates.com/beginners/reformer-pilates-mallorca/</loc></url>
-  <url><loc>https://mallorcapilates.com/compare/reformer-vs-yoga-mat/</loc></url>
-  <url><loc>https://mallorcapilates.com/pricing/</loc></url>
-  <url><loc>https://mallorcapilates.com/about/</loc></url>
-  <url><loc>https://mallorcapilates.com/contact/</loc></url>
-  <url><loc>https://mallorcapilates.com/signup/</loc></url>
-  <url><loc>https://mallorcapilates.com/blog/</loc></url>
-  <url><loc>https://mallorcapilates.com/en/</loc></url>
-  <url><loc>https://mallorcapilates.com/de/</loc></url>
-  <url><loc>https://mallorcapilates.com/es/</loc></url>
-  <url><loc>https://mallorcapilates.com/sv/</loc></url>
-  <url><loc>https://mallorcapilates.com/brand/</loc></url>
-  <url><loc>https://mallorcapilates.com/faq/</loc></url>
-  <url><loc>https://mallorcapilates.com/privacy/</loc></url>
-  <url><loc>https://mallorcapilates.com/terms/</loc></url>
+  <url><loc>https://pilatesmallorca.com/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/palma/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/calvia/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/alcudia/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/soller/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/andratx/</loc></url>
+  <url><loc>https://pilatesmallorca.com/studios/map/</loc></url>
+  <url><loc>https://pilatesmallorca.com/teachers/</loc></url>
+  <url><loc>https://pilatesmallorca.com/teachers/reformer/</loc></url>
+  <url><loc>https://pilatesmallorca.com/beginners/reformer-pilates-mallorca/</loc></url>
+  <url><loc>https://pilatesmallorca.com/compare/reformer-vs-yoga-mat/</loc></url>
+  <url><loc>https://pilatesmallorca.com/pricing/</loc></url>
+  <url><loc>https://pilatesmallorca.com/about/</loc></url>
+  <url><loc>https://pilatesmallorca.com/contact/</loc></url>
+  <url><loc>https://pilatesmallorca.com/signup/</loc></url>
+  <url><loc>https://pilatesmallorca.com/blog/</loc></url>
+  <url><loc>https://pilatesmallorca.com/en/</loc></url>
+  <url><loc>https://pilatesmallorca.com/de/</loc></url>
+  <url><loc>https://pilatesmallorca.com/es/</loc></url>
+  <url><loc>https://pilatesmallorca.com/sv/</loc></url>
+  <url><loc>https://pilatesmallorca.com/brand/</loc></url>
+  <url><loc>https://pilatesmallorca.com/faq/</loc></url>
+  <url><loc>https://pilatesmallorca.com/privacy/</loc></url>
+  <url><loc>https://pilatesmallorca.com/terms/</loc></url>
 XML
 
 for item in "${BLOGS[@]}"; do
   IFS='|' read -r slug _ <<<"$item"
-  echo "  <url><loc>https://mallorcapilates.com/blog/${slug}/</loc></url>" >> sitemap.xml
+  echo "  <url><loc>https://pilatesmallorca.com/blog/${slug}/</loc></url>" >> sitemap.xml
 done
 
 cat >> sitemap.xml <<'XML'
@@ -415,7 +415,7 @@ XML
 cat > README.md <<'MD'
 # Mallorca Pilates Website
 
-Static, mobile-first SEO site scaffold for `mallorcapilates.com`.
+Static, mobile-first SEO site scaffold for `pilatesmallorca.com`.
 
 ## Included
 - 20+ core pages (directory, area pages, legal pages, conversion pages)
@@ -425,7 +425,7 @@ Static, mobile-first SEO site scaffold for `mallorcapilates.com`.
 
 ## Run locally
 ```bash
-cd /Users/marianacarvalho/Documents/mallorcapilates.com
+cd /Users/marianacarvalho/Documents/pilatesmallorca.com
 python3 -m http.server 8080
 ```
 Then open `http://localhost:8080`.
@@ -441,7 +441,7 @@ cat > BRIEFING-CODEX-GPT5.3.md <<'MD'
 # Briefing for Codex + GPT-5.3
 
 ## Objective
-Build and scale `mallorcapilates.com` as the leading organic acquisition platform for Reformer Pilates in Mallorca and convert visitors into qualified leads.
+Build and scale `pilatesmallorca.com` as the leading organic acquisition platform for Reformer Pilates in Mallorca and convert visitors into qualified leads.
 
 ## Focus keywords
 1. pilates mallorca

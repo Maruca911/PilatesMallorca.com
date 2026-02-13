@@ -7,16 +7,16 @@
   <meta name="description" content="Find certified Pilates teachers in Mallorca by specialty, language, and lesson style.">
   <meta name="keywords" content="pilates mallorca,pilates teachers mallorca,reformer coach mallorca">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/teachers/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/teachers/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/teachers/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/teachers/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/teachers/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/teachers/">
+  <link rel="canonical" href="https://pilatesmallorca.com/teachers/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/teachers/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/teachers/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/teachers/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/teachers/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/teachers/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pilates Teachers in Mallorca | Mallorca Pilates">
   <meta property="og:description" content="Find certified Pilates teachers in Mallorca by specialty, language, and lesson style.">
-  <meta property="og:url" content="https://mallorcapilates.com/teachers/">
+  <meta property="og:url" content="https://pilatesmallorca.com/teachers/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pilates Teachers in Mallorca | Mallorca Pilates">
@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
+  <script defer src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -54,10 +55,113 @@
   </div>
 </header>
 <main class="container">
-<section class="hero article">
-  <p class="breadcrumb"><a href="/">Home</a></p>
-  <h1>Pilates teachers in Mallorca</h1>
-  <p>Get matched with teachers for strength, recovery, mobility, or beginner onboarding.</p>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-intro">
+      <p class="breadcrumb"><a href="/">Home</a></p>
+      <span class="hero-pill"><span class="pulse-dot"></span>Teacher matching in Mallorca</span>
+      <h1>Pilates teachers in Mallorca</h1>
+      <p>Tell us your goal and preferences. We send 3 best-fit teachers by email or WhatsApp within 24 hours.</p>
+      <div class="cta-row">
+        <a class="button secondary" href="/teachers/reformer/">Reformer specialists</a>
+        <a class="button secondary" href="/signup/">Full intake</a>
+      </div>
+      <div class="hero-media" data-hero-slideshow aria-label="Teacher highlights slideshow">
+        <div class="hero-slide a"><span>Private Pilates teachers for beginners and back-care support</span></div>
+        <div class="hero-slide b"><span>Reformer coaching for strength, posture, and athletic performance</span></div>
+        <div class="hero-slide c"><span>English, German, Spanish, and Swedish teaching options</span></div>
+      </div>
+      <p class="meta">Prefer a studio? Browse <a href="/studios/">Reformer studios</a> or request a <a href="/retreats/">retreat</a>.</p>
+    </div>
+
+    <aside class="hero-form" aria-labelledby="teacher-form-title">
+      <h2 id="teacher-form-title">Get 3 teacher matches</h2>
+      <p class="meta">Short questionnaire. Free for users. You choose who to book with.</p>
+
+      <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
+
+      <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+        <input type="hidden" name="form-name" value="pilates-match">
+        <p class="visually-hidden">
+          <label>Don’t fill this out <input name="bot-field"></label>
+        </p>
+        <input type="hidden" name="source_page" value="">
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="lead_category" value="Teacher">
+
+        <div class="form-row">
+          <label>Name <input type="text" name="name" autocomplete="name" required></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        </div>
+
+        <div class="form-row">
+          <label>Contact channel
+            <select name="contact_channel_preference" required>
+              <option value="">Select channel</option>
+              <option>Email</option>
+              <option>WhatsApp</option>
+              <option>Email + WhatsApp</option>
+            </select>
+          </label>
+          <label>WhatsApp number (if selected) <input type="tel" name="phone" autocomplete="tel" placeholder="+34 ..."></label>
+        </div>
+
+        <div class="form-row">
+          <label>Area in Mallorca
+            <select name="area" required>
+              <option value="">Select area</option>
+              <option>Palma</option>
+              <option>Calvia</option>
+              <option>Andratx</option>
+              <option>Soller</option>
+              <option>Alcudia</option>
+              <option>Flexible / island-wide</option>
+            </select>
+          </label>
+          <label>Session type
+            <select name="session_type" required>
+              <option value="">Select type</option>
+              <option>Private 1:1</option>
+              <option>Duo / 2 people</option>
+              <option>Small group</option>
+              <option>Flexible</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Main goal
+            <select name="goal" required>
+              <option value="">Select goal</option>
+              <option>Beginner onboarding</option>
+              <option>Strength and toning</option>
+              <option>Mobility and flexibility</option>
+              <option>Recovery / back-care support</option>
+              <option>Athletic performance</option>
+            </select>
+          </label>
+          <label>Preferred language
+            <select name="language_preference" required>
+              <option value="">Select language</option>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Swedish</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Notes (optional)
+          <textarea name="notes" placeholder="Example: injuries, prenatal/postnatal, equipment preference (Reformer/mat), schedule."></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Send My Teacher Request</button>
+        <p class="meta">We’ll reply with 3 options and can refine the shortlist if needed.</p>
+      </form>
+    </aside>
+  </div>
 </section>
 <section class="section article">
 
@@ -71,7 +175,7 @@
   <article class='card'><h3>Carlos V.</h3><p class='meta'>ES/EN · Beginner progression plans</p></article>
   <article class='card'><h3>Julia S.</h3><p class='meta'>DE/EN · Mobility and flexibility blocks</p></article>
 </div>
-<p><a class='button primary' href='/signup/'>Match me with a teacher</a></p>
+<p><a class='button primary' href='#match-form'>Match me with a teacher</a> <a class='button secondary' href='/signup/'>Open full intake</a></p>
 
 <article class="faq-group">
   <h3>Teacher quick FAQ</h3>
@@ -94,6 +198,6 @@
     <div><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a><br><a href="/contact/">Contact</a></div>
   </div>
 </footer>
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get Matched</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="#match-form">Get Matched</a></div>
 </body>
 </html>

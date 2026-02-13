@@ -6,18 +6,21 @@
   <title>Pilates Mallorca Match | Mallorca Pilates</title>
   <meta name="description" content="Find Pilates retreats, teachers, and studios in Mallorca. Submit the quick form and get 3 personalized matches in 24h.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/lp/pilates-mallorca/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/lp/pilates-mallorca/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/lp/pilates-mallorca/">
+  <link rel="canonical" href="https://pilatesmallorca.com/lp/pilates-mallorca/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/lp/pilates-mallorca/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/lp/pilates-mallorca/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pilates Mallorca Match | Mallorca Pilates">
   <meta property="og:description" content="Find Pilates retreats, teachers, and studios in Mallorca. Submit the quick form and get 3 personalized matches in 24h.">
-  <meta property="og:url" content="https://mallorcapilates.com/lp/pilates-mallorca/">
+  <meta property="og:url" content="https://pilatesmallorca.com/lp/pilates-mallorca/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pilates Mallorca Match | Mallorca Pilates">
   <meta name="twitter:description" content="Find Pilates retreats, teachers, and studios in Mallorca. Submit the quick form and get 3 personalized matches in 24h.">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
   <script defer src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
 </head>
@@ -47,10 +50,19 @@
   <section class="section article">
     <div class="notice">A/B test enabled. Use URL param <code>?ab=a</code> or <code>?ab=b</code> to force a variant.</div>
     <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
-    <form class="form" data-fallback-form>
-      <div class="form-row"><label>Name <input type="text" required></label><label>Email <input type="email" required></label></div>
-      <div class="form-row"><label>Area <select><option>Palma</option><option>Calvia</option><option>Andratx</option><option>Soller</option><option>Alcudia</option><option>Flexible</option></select></label><label>Looking for <select><option>Retreat</option><option>Teacher</option><option>Studio</option><option>Mix of all three</option></select></label></div>
-      <div class="form-row"><label>Channel <select><option>Email</option><option>WhatsApp</option><option>Email + WhatsApp</option></select></label><label>WhatsApp number <input type="tel" placeholder="+34 ..."></label></div>
+    <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+      <input type="hidden" name="form-name" value="pilates-match">
+      <p class="visually-hidden">
+        <label>Don’t fill this out <input name="bot-field"></label>
+      </p>
+      <input type="hidden" name="source_page" value="">
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_campaign" value="">
+      <div class="form-row"><label>Name <input type="text" name="name" autocomplete="name" required></label><label>Email <input type="email" name="email" autocomplete="email" required></label></div>
+      <div class="form-row"><label>Area <select name="area" required><option value="">Select area</option><option>Palma</option><option>Calvia</option><option>Andratx</option><option>Soller</option><option>Alcudia</option><option>Flexible / island-wide</option></select></label><label>Looking for <select name="lead_category" required><option value="">Select option</option><option>Retreat</option><option>Teacher</option><option>Studio</option><option>Mix of all three</option></select></label></div>
+      <div class="form-row"><label>Channel <select name="contact_channel_preference" required><option value="">Select channel</option><option>Email</option><option>WhatsApp</option><option>Email + WhatsApp</option></select></label><label>WhatsApp number <input type="tel" name="phone" autocomplete="tel" placeholder="+34 ..."></label></div>
+      <label>Notes (optional) <textarea name="notes" placeholder="Goal, level, timing, and anything else that matters."></textarea></label>
       <button class="button primary" type="submit" data-ab-a="Get 3 Matches" data-ab-b="Find My Best Matches">Get 3 Matches</button>
     </form>
     <div class="card"><h3>Conversion notes</h3><p class="meta">This page is optimized for paid traffic from Google Ads and Facebook Ads with immediate form capture.</p></div>
@@ -65,6 +77,6 @@
     <div><a href="/contact/">Contact</a></div>
   </div>
 </footer>
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get Matched</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="#match-form">Get Matched</a></div>
 </body>
 </html>

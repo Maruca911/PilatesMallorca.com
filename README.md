@@ -1,6 +1,6 @@
 # Mallorca Pilates Website
 
-Static, mobile-first SEO site scaffold for `mallorcapilates.com`.
+Static, mobile-first SEO site scaffold for `pilatesmallorca.com`.
 
 ## Included
 - 20+ core pages (directory, area pages, legal pages, conversion pages)

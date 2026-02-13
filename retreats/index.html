@@ -7,22 +7,26 @@
   <meta name="description" content="Browse Pilates retreats in Mallorca by area, style, and language. Get matched with 3 retreat options that fit your goals.">
   <meta name="keywords" content="pilates retreats mallorca,wellness retreat mallorca,pilates holiday mallorca,reformer retreat mallorca">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/retreats/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/retreats/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/retreats/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/retreats/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/retreats/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/retreats/">
+  <link rel="canonical" href="https://pilatesmallorca.com/retreats/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/retreats/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/retreats/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/retreats/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/retreats/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/retreats/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pilates Retreats in Mallorca | Mallorca Pilates">
   <meta property="og:description" content="Find Pilates and wellness retreats in Mallorca and request personalized recommendations.">
-  <meta property="og:url" content="https://mallorcapilates.com/retreats/">
+  <meta property="og:url" content="https://pilatesmallorca.com/retreats/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pilates Retreats in Mallorca | Mallorca Pilates">
   <meta name="twitter:description" content="Discover curated retreats in Palma, Calvia, Tramuntana, Andratx, and Alcudia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
+  <script defer src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -52,14 +56,135 @@
 </header>
 
 <main class="container">
-  <section class="hero article">
-    <p class="breadcrumb"><a href="/">Home</a></p>
-    <h1>Pilates Retreats in Mallorca</h1>
-    <p>Explore retreat options by area and style. We can also send you 3 curated retreat matches based on your goals and dates.</p>
-    <p><a class="button primary" href="/signup/">Get Retreat Matches</a></p>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-intro">
+        <p class="breadcrumb"><a href="/">Home</a></p>
+        <span class="hero-pill"><span class="pulse-dot"></span>Retreat matching in Mallorca</span>
+        <h1>Pilates retreats in Mallorca, matched to your dates</h1>
+        <p>Tell us your travel timing, goals, and preferred contact channel. We send 3 curated retreat options by email or WhatsApp within 24 hours.</p>
+        <div class="cta-row">
+          <a class="button secondary" href="#how-it-works">How it works</a>
+          <a class="button secondary" href="#retreat-areas">Browse areas</a>
+        </div>
+        <div class="hero-media" data-hero-slideshow aria-label="Retreat highlights slideshow">
+          <div class="hero-slide a"><span>Sea-view Pilates retreats in Calvia and the south-west</span></div>
+          <div class="hero-slide b"><span>Mountain reset weekends in Tramuntana (Soller, Deia)</span></div>
+          <div class="hero-slide c"><span>Urban wellness stays in Palma with studio access</span></div>
+        </div>
+        <p class="meta">Prefer classes instead? Explore <a href="/studios/">studios</a> or <a href="/teachers/">teachers</a>.</p>
+      </div>
+
+      <aside class="hero-form" aria-labelledby="retreat-form-title">
+        <h2 id="retreat-form-title">Get 3 retreat matches</h2>
+        <p class="meta">Short questionnaire. Free for users. You choose who to book with.</p>
+
+        <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
+
+        <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+          <input type="hidden" name="form-name" value="pilates-match">
+          <p class="visually-hidden">
+            <label>Don’t fill this out <input name="bot-field"></label>
+          </p>
+          <input type="hidden" name="source_page" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="lead_category" value="Retreat">
+
+          <div class="form-row">
+            <label>Name <input type="text" name="name" autocomplete="name" required></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required></label>
+          </div>
+
+          <div class="form-row">
+            <label>Contact channel
+              <select name="contact_channel_preference" required>
+                <option value="">Select channel</option>
+                <option>Email</option>
+                <option>WhatsApp</option>
+                <option>Email + WhatsApp</option>
+              </select>
+            </label>
+            <label>WhatsApp number (if selected) <input type="tel" name="phone" autocomplete="tel" placeholder="+34 ..."></label>
+          </div>
+
+          <div class="form-row">
+            <label>Travel timing
+              <select name="travel_timing" required>
+                <option value="">Select timing</option>
+                <option>Next 2 weeks</option>
+                <option>1-3 months</option>
+                <option>3-6 months</option>
+                <option>Flexible</option>
+              </select>
+            </label>
+            <label>Area in Mallorca
+              <select name="area" required>
+                <option value="">Select area</option>
+                <option>Palma</option>
+                <option>Calvia</option>
+                <option>Tramuntana</option>
+                <option>Andratx</option>
+                <option>Alcudia</option>
+                <option>Flexible / island-wide</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Main goal
+              <select name="goal" required>
+                <option value="">Select goal</option>
+                <option>Beginner onboarding</option>
+                <option>Strength and toning</option>
+                <option>Mobility and flexibility</option>
+                <option>Recovery / back-care support</option>
+                <option>Wellness reset</option>
+              </select>
+            </label>
+            <label>Preferred language
+              <select name="language_preference" required>
+                <option value="">Select language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>German</option>
+                <option>Swedish</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Notes (optional)
+            <textarea name="notes" placeholder="Example: beginner friendly, injury-aware, hotel area, budget range, special requests."></textarea>
+          </label>
+
+          <button class="button primary" type="submit">Send My Retreat Request</button>
+          <p class="meta">We’ll reply with 3 options and can refine the shortlist if needed.</p>
+        </form>
+      </aside>
+    </div>
   </section>
 
-  <section class="section article">
+  <section id="how-it-works" class="section">
+    <h2>How it works</h2>
+    <p class="lead">From first click to curated introductions in three steps.</p>
+    <div class="grid cols-3 steps">
+      <article class="card step">
+        <div class="step-icon" aria-hidden="true">1</div>
+        <div><h3>Tell us your timing + goals</h3><p class="meta">Share your area, travel window, and class style in under 2 minutes.</p></div>
+      </article>
+      <article class="card step">
+        <div class="step-icon" aria-hidden="true">2</div>
+        <div><h3>We shortlist 3 retreats</h3><p class="meta">We match you with options that fit your profile and language preference.</p></div>
+      </article>
+      <article class="card step">
+        <div class="step-icon" aria-hidden="true">3</div>
+        <div><h3>You receive intros in 24h</h3><p class="meta">We send recommendations by email/WhatsApp. You choose who to book with.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="retreat-areas" class="section article">
     <div class="card">
       <h2>Jump to planning pages</h2>
       <p><a href="/faq/">Retreat FAQ</a> · <a href="/guides/reformer-starter-checklist/">Starter checklist</a> · <a href="/signup/">Submit retreat request</a></p>
@@ -97,6 +222,6 @@
     <div><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a><br><a href="/contact/">Contact</a></div>
   </div>
 </footer>
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get 3 Retreat Matches</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="#match-form">Get 3 Retreat Matches</a></div>
 </body>
 </html>

@@ -1,17 +1,17 @@
 # Mallorca Pilates - LLM Index
 
-Site: https://mallorcapilates.com/
+Site: https://pilatesmallorca.com/
 Purpose: Lead brokerage and educational directory for Pilates retreats, teachers, and studios in Mallorca.
 Primary audience: Residents, expats, and tourists looking for Pilates options in Mallorca.
 
 ## Primary pages
-- https://mallorcapilates.com/
-- https://mallorcapilates.com/retreats/
-- https://mallorcapilates.com/teachers/
-- https://mallorcapilates.com/studios/
-- https://mallorcapilates.com/signup/
-- https://mallorcapilates.com/faq/
-- https://mallorcapilates.com/blog/
+- https://pilatesmallorca.com/
+- https://pilatesmallorca.com/retreats/
+- https://pilatesmallorca.com/teachers/
+- https://pilatesmallorca.com/studios/
+- https://pilatesmallorca.com/signup/
+- https://pilatesmallorca.com/faq/
+- https://pilatesmallorca.com/blog/
 
 ## Conversion model
 - User submits one profile form

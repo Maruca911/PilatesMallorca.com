@@ -7,16 +7,16 @@
   <meta name="description" content="Find the best Pilates retreats, teachers, and studios in Mallorca. Submit one form and receive 3 personalized matches by email or WhatsApp within 24 hours.">
   <meta name="keywords" content="pilates mallorca,reformer pilates mallorca,pilates retreats mallorca,pilates teachers mallorca,pilates studios mallorca,private pilates mallorca">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <link rel="canonical" href="https://mallorcapilates.com/">
-  <link rel="alternate" hreflang="en" href="https://mallorcapilates.com/">
-  <link rel="alternate" hreflang="de" href="https://mallorcapilates.com/de/">
-  <link rel="alternate" hreflang="es" href="https://mallorcapilates.com/es/">
-  <link rel="alternate" hreflang="sv" href="https://mallorcapilates.com/sv/">
-  <link rel="alternate" hreflang="x-default" href="https://mallorcapilates.com/">
+  <link rel="canonical" href="https://pilatesmallorca.com/">
+  <link rel="alternate" hreflang="en" href="https://pilatesmallorca.com/">
+  <link rel="alternate" hreflang="de" href="https://pilatesmallorca.com/de/">
+  <link rel="alternate" hreflang="es" href="https://pilatesmallorca.com/es/">
+  <link rel="alternate" hreflang="sv" href="https://pilatesmallorca.com/sv/">
+  <link rel="alternate" hreflang="x-default" href="https://pilatesmallorca.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mallorca Pilates Match: Retreats, Teachers, Studios">
   <meta property="og:description" content="One form, 3 curated matches. Get connected with Pilates providers in Mallorca within 24 hours.">
-  <meta property="og:url" content="https://mallorcapilates.com/">
+  <meta property="og:url" content="https://pilatesmallorca.com/">
   <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mallorca Pilates Match: Retreats, Teachers, Studios">
@@ -32,10 +32,10 @@
     "@context":"https://schema.org",
     "@type":"WebSite",
     "name":"Mallorca Pilates",
-    "url":"https://mallorcapilates.com/",
+    "url":"https://pilatesmallorca.com/",
     "potentialAction":{
       "@type":"SearchAction",
-      "target":"https://mallorcapilates.com/studios/?query={query}",
+      "target":"https://pilatesmallorca.com/studios/?query={query}",
       "query-input":"required name=query"
     }
   }
@@ -45,7 +45,7 @@
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Mallorca Pilates",
-    "url":"https://mallorcapilates.com/",
+    "url":"https://pilatesmallorca.com/",
     "description":"Lead broker connecting users to Pilates retreats, teachers, and studios in Mallorca."
   }
   </script>
@@ -120,7 +120,15 @@
 
         <div data-hubspot-form data-portal-id="REPLACE_PORTAL_ID" data-form-id="REPLACE_FORM_ID"></div>
 
-        <form class="form" data-fallback-form>
+        <form class="form" name="pilates-match" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" data-fallback-form id="match-form">
+          <input type="hidden" name="form-name" value="pilates-match">
+          <p class="visually-hidden">
+            <label>Don’t fill this out <input name="bot-field"></label>
+          </p>
+          <input type="hidden" name="source_page" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
           <div class="form-row">
             <label>Name
               <input type="text" name="name" required>
@@ -253,7 +261,7 @@
 </footer>
 
 <div class="sticky-mobile-cta">
-  <a class="button primary" href="/signup/">Get Matched</a>
+  <a class="button primary" href="#match-form">Get Matched</a>
 </div>
 </body>
 </html>

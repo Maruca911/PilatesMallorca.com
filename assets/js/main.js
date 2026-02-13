@@ -5,7 +5,7 @@
   var filterArea = document.querySelector('[data-studio-filter="area"]');
   var filterType = document.querySelector('[data-studio-filter="type"]');
   var studioCards = document.querySelectorAll('.studio-card');
-  var hubspotFormTarget = document.querySelector('[data-hubspot-form]');
+  var hubspotFormTargets = document.querySelectorAll('[data-hubspot-form]');
   var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var slideTimer = null;
   var abRoot = document.querySelector('[data-ab-test="ads-hero"]');
@@ -69,6 +69,23 @@
     });
   }
 
+  // Simple client-side filtering for long FAQ pages (AI/long-tail UX).
+  document.querySelectorAll('[data-faq-search]').forEach(function (input) {
+    var items = Array.prototype.slice.call(document.querySelectorAll('.faq-item'));
+    if (!items.length) return;
+    input.addEventListener('input', function () {
+      var q = (input.value || '').trim().toLowerCase();
+      items.forEach(function (item) {
+        if (!q) {
+          item.style.display = '';
+          return;
+        }
+        var hay = (item.textContent || '').toLowerCase();
+        item.style.display = hay.indexOf(q) !== -1 ? '' : 'none';
+      });
+    });
+  });
+
   document.querySelectorAll('[data-count]').forEach(function (counter) {
     var target = parseInt(counter.getAttribute('data-count'), 10);
     if (!target || Number.isNaN(target)) return;
@@ -88,21 +105,44 @@
     }, 28);
   });
 
-  // HubSpot form integration point: set your real portalId/formId on the container.
-  if (hubspotFormTarget && window.hbspt && window.hbspt.forms) {
-    var portalId = hubspotFormTarget.getAttribute('data-portal-id');
-    var formId = hubspotFormTarget.getAttribute('data-form-id');
-    if (portalId && formId && portalId !== 'REPLACE_PORTAL_ID' && formId !== 'REPLACE_FORM_ID') {
+  // Ensure hidden attribution fields are populated for Netlify/HubSpot submissions.
+  document.querySelectorAll('input[name="source_page"]').forEach(function (input) {
+    input.value = window.location.pathname;
+  });
+  document.querySelectorAll('input[name="utm_source"]').forEach(function (input) {
+    var params = new URLSearchParams(window.location.search);
+    input.value = params.get('utm_source') || '';
+  });
+  document.querySelectorAll('input[name="utm_medium"]').forEach(function (input) {
+    var params = new URLSearchParams(window.location.search);
+    input.value = params.get('utm_medium') || '';
+  });
+  document.querySelectorAll('input[name="utm_campaign"]').forEach(function (input) {
+    var params = new URLSearchParams(window.location.search);
+    input.value = params.get('utm_campaign') || '';
+  });
+
+  // HubSpot form integration point: set real portalId/formId on each container.
+  if (hubspotFormTargets.length && window.hbspt && window.hbspt.forms) {
+    hubspotFormTargets.forEach(function (target, index) {
+      var portalId = target.getAttribute('data-portal-id');
+      var formId = target.getAttribute('data-form-id');
+      if (!portalId || !formId || portalId === 'REPLACE_PORTAL_ID' || formId === 'REPLACE_FORM_ID') return;
+
+      if (!target.id) target.id = 'hubspot-form-' + index;
+
       window.hbspt.forms.create({
         region: 'eu1',
         portalId: portalId,
         formId: formId,
-        target: '[data-hubspot-form]'
+        target: '#' + target.id
       });
 
-      var fallback = document.querySelector('[data-fallback-form]');
-      if (fallback) fallback.style.display = 'none';
-    }
+      var fallback = target.nextElementSibling;
+      if (fallback && fallback.hasAttribute('data-fallback-form')) {
+        fallback.style.display = 'none';
+      }
+    });
   }
 
   if (abRoot) {
