@@ -1,7 +1,7 @@
 # Briefing for Codex + GPT-5.3
 
 ## Objective
-Build and scale `mallorcareformer.com` as the leading organic acquisition platform for Reformer Pilates in Mallorca and convert visitors into qualified leads.
+Build and scale `mallorcapilates.com` as the leading organic acquisition platform for Reformer Pilates in Mallorca and convert visitors into qualified leads.
 
 ## Focus keywords
 1. pilates mallorca

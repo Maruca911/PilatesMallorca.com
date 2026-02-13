@@ -1,6 +1,6 @@
-# Mallorca Reformer Website
+# Mallorca Pilates Website
 
-Static, mobile-first SEO site scaffold for `mallorcareformer.com`.
+Static, mobile-first SEO site scaffold for `mallorcapilates.com`.
 
 ## Included
 - 20+ core pages (directory, area pages, legal pages, conversion pages)

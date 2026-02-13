@@ -1,4 +1,4 @@
-# SEO Checklist - mallorcareformer.com
+# SEO Checklist - mallorcapilates.com
 
 ## Technical
 - [x] Mobile-first layout and responsive breakpoints
