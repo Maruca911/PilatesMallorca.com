@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /Users/marianacarvalho/Documents/pilatesmallorca.com
+# Simple static HTML generator used during early scaffolding.
+# Keep it aligned with the current site styles and avoid external font requests.
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 header() {
   local title="$1"; local desc="$2"; local canon="$3"; local keywords="$4"
@@ -24,27 +26,25 @@ header() {
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
   <meta property="og:url" content="${canon}">
-  <meta property="og:site_name" content="Mallorca Reformer">
+  <meta property="og:site_name" content="Mallorca Pilates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${desc}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="/"><span>Mallorca</span> Reformer</a>
+    <a class="logo" href="/"><span>Mallorca</span> Pilates</a>
     <button class="nav-toggle" data-nav-toggle aria-label="Open menu">Menu</button>
     <nav class="site-nav" data-nav>
-      <a href="/studios/">Studios</a>
+      <a href="/retreats/">Retreats</a>
       <a href="/teachers/">Teachers</a>
-      <a href="/compare/reformer-vs-yoga-mat/">Reformer vs Yoga</a>
+      <a href="/studios/">Studios</a>
       <a href="/blog/">Blog</a>
-      <a href="/signup/">Sign Up</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/signup/">Get Matched</a>
     </nav>
   </div>
 </header>
@@ -57,13 +57,13 @@ footer() {
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><strong>Mallorca Reformer</strong><p class="meta">Directory + education for Reformer Pilates in Mallorca.</p></div>
-    <div><a href="/studios/">Studios</a><br><a href="/teachers/">Teachers</a><br><a href="/pricing/">Pricing</a></div>
+    <div><strong>Mallorca Pilates</strong><p class="meta">Directory + education for Reformer Pilates in Mallorca.</p></div>
+    <div><a href="/retreats/">Retreats</a><br><a href="/teachers/">Teachers</a><br><a href="/studios/">Studios</a></div>
     <div><a href="/blog/">Blog</a><br><a href="/faq/">FAQ</a><br><a href="/brand/">Brand</a></div>
     <div><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a><br><a href="/contact/">Contact</a></div>
   </div>
 </footer>
-<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get Matched with a Reformer Studio</a></div>
+<div class="sticky-mobile-cta"><a class="button primary" href="/signup/">Get Matched</a></div>
 </body>
 </html>
 HTML

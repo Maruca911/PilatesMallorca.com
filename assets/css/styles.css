@@ -21,7 +21,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: var(--ink);
   background: radial-gradient(circle at 15% 10%, #fbfdff, #f5f9fc 46%, #eff5f8 100%);
 }
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .logo {
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -189,7 +189,7 @@ a:hover {
 }
 
 .hero h1 {
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
   font-size: clamp(2rem, 9vw, 3.7rem);
   line-height: 1.03;
   margin: 8px 0 12px;
@@ -285,7 +285,7 @@ a:hover {
   right: 16px;
   bottom: 18px;
   color: #fff;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -312,7 +312,7 @@ a:hover {
 
 .hero-form h2 {
   margin: 4px 0 6px;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 
@@ -397,7 +397,7 @@ a:hover {
 }
 
 .section h2 {
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: clamp(1.45rem, 5vw, 2.1rem);
   margin: 0 0 10px;
 }
@@ -441,7 +441,7 @@ a:hover {
   display: grid;
   place-items: center;
   font-weight: 800;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #1a2f3a;
   background: linear-gradient(160deg, #ffffff, #f0f3ff);
   border: 1px solid rgba(109, 125, 255, 0.32);
@@ -457,7 +457,7 @@ a:hover {
 
 .card h3 {
   margin: 0 0 8px;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .card p,
@@ -481,7 +481,7 @@ a:hover {
 .kpi .value {
   font-size: 1.3rem;
   font-weight: 800;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #182f3a;
 }
 
@@ -527,7 +527,7 @@ a:hover {
 .article h1,
 .article h2,
 .article h3 {
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .breadcrumb {
